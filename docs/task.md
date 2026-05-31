@@ -1,0 +1,21 @@
+# Tasks - Spotify VibeStats
+
+- [ ] Initialize project & build system
+  - [x] Initialize TanStack Start/Vite SPA with React + TypeScript template
+  - [ ] Configure `package.json` with TanStack Query, lz-string, and html-to-image
+- [ ] Build baseline design system
+  - [ ] Update `index.html` with Google Fonts (Outfit, Inter) and metadata
+  - [ ] Create detailed `src/index.css` with responsive typography, dark glassmorphism system, and glowing neon utilities
+- [ ] Implement core utilities
+  - [ ] Create `src/utils/spotifyApi.ts` supporting PKCE Auth flow, API endpoints, and calculated genre charts
+  - [ ] Create `src/utils/sharing.ts` with LZW compression/decompression for state-to-URL encoding
+- [ ] Build UI views and components
+  - [ ] Create high-end `src/components/Navbar.tsx` and custom navigation
+  - [ ] Create `src/components/PreviewPlayer.tsx` floating preview audio player with equalizer visualizer
+  - [ ] Create `src/components/ShareCardGenerator.tsx` customizable Wrapped-style posters & canvas exporter
+  - [ ] Create `src/components/SharedProfile.tsx` decodable URL viewer for guest views
+  - [ ] Create `src/components/Dashboard.tsx` dynamic stat switcher using TanStack Query
+  - [ ] Tie together views in `src/App.tsx`
+- [ ] Build & Verify
+  - [ ] Run typescript checks and production builds
+  - [ ] Document Cloudflare Pages instructions
