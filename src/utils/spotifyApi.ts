@@ -13,7 +13,7 @@ export async function redirectToAuthCodeFlow() {
   localStorage.setItem('code_verifier', verifier);
 
   const params = new URLSearchParams();
-  params.append('client_id', CLIENT_ID);
+  params.append('client_id', CLIENT_ID!);
   params.append('response_type', 'code');
   params.append('redirect_uri', REDIRECT_URI);
   params.append('scope', 'user-read-private user-read-email user-top-read user-read-recently-played');
@@ -47,7 +47,7 @@ export async function getAccessToken(code: string): Promise<string> {
   const verifier = localStorage.getItem('code_verifier');
 
   const params = new URLSearchParams();
-  params.append('client_id', CLIENT_ID);
+  params.append('client_id', CLIENT_ID!);
   params.append('grant_type', 'authorization_code');
   params.append('code', code);
   params.append('redirect_uri', REDIRECT_URI);
