@@ -19,7 +19,7 @@ export const Route = createRootRoute({
         content: 'width=device-width, initial-scale=1',
       },
       {
-        title: 'Spotify VibeStats - Your Music, Visualized',
+        title: 'StreamsSpotify - Your Music, Visualized',
       },
       {
         name: 'description',

@@ -30,7 +30,7 @@ function App() {
         <div className="glass-panel p-10 max-w-lg w-full text-center space-y-8 animate-fade-in">
           <div className="space-y-4">
             <h1 className="text-5xl font-display font-black display-title">
-              Vibe<span className="text-spotify-green">Stats</span>
+              Streams<span className="text-spotify-green">Spotify</span>
             </h1>
             <p className="text-text-secondary text-lg">
               Enter username to see top tracks, artists, genres, and more.

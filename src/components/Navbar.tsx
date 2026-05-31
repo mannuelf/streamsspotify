@@ -26,7 +26,7 @@ export default function Navbar() {
             <Music className="w-5 h-5 text-black" />
           </div>
           <span className="text-xl font-display font-extrabold tracking-tight">
-            Vibe<span className="text-spotify-green">Stats</span>
+            Streams<span className="text-spotify-green">Spotify</span>
           </span>
         </Link>
 

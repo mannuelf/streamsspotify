@@ -1,4 +1,4 @@
-# Tasks - Spotify VibeStats
+# Tasks - StreamsSpotify
 
 - [x] Initialize project & build system
 - [x] Configure dependencies (@tanstack/react-query, lz-string)
