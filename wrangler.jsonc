@@ -1,28 +1,45 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "streamsspotify",
-  "compatibility_date": "2026-04-02",
-  "compatibility_flags": ["nodejs_compat"],
-  "main": "@tanstack/react-start/server-entry",
-  "secrets": {
-    "required": ["VITE_SPOTIFY_CLIENT_ID", "VITE_SPOTIFY_CLIENT_SECRET"]
-  },
-  "assets": {
-    "directory": ".output/public"
-  },
-  "observability": {
-    "enabled": false,
-    "head_sampling_rate": 1,
-    "logs": {
-      "enabled": true,
-      "head_sampling_rate": 1,
-      "persist": true,
-      "invocation_logs": true
-    },
-    "traces": {
-      "enabled": false,
-      "persist": true,
-      "head_sampling_rate": 1
-    }
-  }
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "streamsspotify",
+	"compatibility_date": "2026-04-02",
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
+	"main": "@tanstack/react-start/server-entry",
+	"routes": [
+		{
+			"pattern": "streamsspotify.com",
+			"zone_name": "streamsspotify.com",
+			"custom_domain": true,
+			"enabled": true,
+			"previews_enabled": false
+		}
+	],
+	"vars": {
+		"VITE_REDIRECT_URI": "https://streamsspotify.com/callback"
+	},
+	"secrets": {
+		"required": [
+			"VITE_SPOTIFY_CLIENT_ID",
+			"VITE_SPOTIFY_CLIENT_SECRET"
+		]
+	},
+	"assets": {
+		"directory": ".output/public"
+	},
+	"observability": {
+		"enabled": false,
+		"head_sampling_rate": 1,
+		"logs": {
+			"enabled": true,
+			"head_sampling_rate": 1,
+			"persist": true,
+			"invocation_logs": true
+		},
+		"traces": {
+			"enabled": false,
+			"persist": true,
+			"head_sampling_rate": 1
+		}
+	}
 }
