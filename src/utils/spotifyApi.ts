@@ -4,7 +4,7 @@
  */
 
 const CLIENT_ID = import.meta.env.VITE_SPOTIFY_CLIENT_ID;
-const REDIRECT_URI = import.meta.env.VITE_REDIRECT_URI || 'http://localhost:3000/callback';
+const REDIRECT_URI = import.meta.env.VITE_REDIRECT_URI || 'http://127.0.0.1:3000/callback';
 
 export async function redirectToAuthCodeFlow() {
   const verifier = generateCodeVerifier(128);
